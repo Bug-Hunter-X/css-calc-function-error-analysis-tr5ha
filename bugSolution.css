@@ -1,0 +1,25 @@
+/* Corrected CSS using calc() */
+
+/* Correctly specify units for all values */
+.element {
+  width: calc(100% - 10px);
+  margin: calc(50% + 2em);
+}
+
+/* Use parentheses for complex expressions to enforce operator precedence */
+.anotherElement {
+  height: calc((100px + 20px) / 2);
+}
+
+/* Convert units to be consistent to prevent unexpected results.  Here we convert em to px */
+.consistentUnits {
+  margin: calc(50% + (2em * 16px));
+}
+
+/* For clarity, break down complex calculations into smaller, easier to read steps. */
+.complexCalc {
+  width: 100px;
+  height: 100px;
+  margin-left: calc(width / 2);
+  margin-top: calc(height / 2);
+} 
